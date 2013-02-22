@@ -14,3 +14,5 @@
 /log/*.log
 /tmp
 /config/youtube_it.yml
+/config/settings/badfruit.yml
+/config/settings/youtube_it.yml

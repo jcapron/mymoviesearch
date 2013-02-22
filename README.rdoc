@@ -1,3 +1,14 @@
 == My Movie Search
 
 This is a Rails app for me to play with different APIs.
+
+== APIs used
+
+- youtube_it (YouTube)
+- badfruit (Rotten Tomatoes)
+
+== Screenshots
+
+http://i.imgur.com/8hZAMyz.png
+
+http://i.imgur.com/j11ZlGO.png

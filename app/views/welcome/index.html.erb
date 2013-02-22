@@ -1,20 +1,32 @@
-<% title "My Movie Search" %>
-
-<%= form_tag root_path do %>
-    <%= text_field_tag :search, params[:search], :placeholder => "Back to the Future" %>
-    <%= submit_tag "Search", :class => "btn" %>
-<% end %>
-
-<% if params[:search] %>
-	<h3 class="muted">Here are the results for "<%= params[:search] %>":</h3>
-
-	<div class="text-left"></div>
-
-	<div class="text-right">
-    <iframe type="text/html" width="640" height="360" src=<%= @video_res.videos.first.embed_url %> ></iframe>
-    </div>
-
-<% end %>
+<div class="hero-unit" style="margin-top: 25px">
+	<h1 style="padding-bottom: 15px">My Movie Search</h1>
 
 
-   
+
+	<%= form_tag root_path do %>
+	    <%= text_field_tag :search, params[:search], :placeholder => "Back to the Future" %>
+	    <%= submit_tag "Search", :class => "btn btn-primary" %>
+	<% end %>
+
+	<% if params[:search] %>
+		<h3 class="muted" style="padding-bottom: 10px">Here are the results for "<%= params[:search] %>":</h3>
+
+		<div class="text-left" style="float: left"><%= image_tag @bf_movie_poster, :size => "256x378" %></div> <!-- posters.original -->
+
+		<div class="text-right">
+	    <iframe type="text/html" width="640" height="360" style="float: right" src=<%= @video_res.videos.first.embed_url %> ></iframe>
+	    </div>	
+
+	    <div style="clear: both; height: 0; overflow: hidden;"></div>
+
+	    <!-- <h4 class="muted">Summary</h5>
+		<div class="text-left">Description</div> -->
+
+		
+		   
+		   
+
+	<% end %>
+
+
+</div>

@@ -30,6 +30,9 @@ GEM
       multi_json (~> 1.0)
     addressable (2.3.3)
     arel (3.0.2)
+    badfruit (1.1.2)
+      httparty
+      json
     builder (3.0.4)
     capybara (2.0.2)
       mime-types (>= 1.16)
@@ -57,7 +60,14 @@ GEM
     faraday (0.8.5)
       multipart-post (~> 1.1)
     ffi (1.4.0)
+    figleaf (0.0.6)
+      activesupport
+      hashie
+    hashie (2.0.0)
     hike (1.2.1)
+    httparty (0.10.2)
+      multi_json (~> 1.0)
+      multi_xml (>= 0.5.2)
     httpauth (0.2.0)
     i18n (0.6.1)
     journey (1.0.4)
@@ -81,8 +91,8 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.20.1)
     multi_json (1.5.0)
+    multi_xml (0.5.3)
     multipart-post (1.1.5)
-    nifty-generators (0.4.6)
     nokogiri (1.5.6)
     oauth (0.4.7)
     oauth2 (0.8.0)
@@ -185,12 +195,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  badfruit
   capybara
   coffee-rails (~> 3.2.1)
+  figleaf
   jquery-rails
   launchy
   less-rails
-  nifty-generators
   quiet_assets
   rails (= 3.2.11)
   rspec-rails

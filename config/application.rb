@@ -58,5 +58,12 @@ module Mymoviesearch
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    Figleaf::Settings.configure_with_auto_define do |s|
+        s.env = Rails.env
+        s.some_awesome_flag = true
+        s.load_settings
+    end
+
   end
 end

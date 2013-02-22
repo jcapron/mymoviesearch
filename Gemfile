@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.11'
 gem 'sqlite3'
 gem 'jquery-rails'
+gem 'figleaf'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -19,7 +20,7 @@ group :development do
 	gem 'quiet_assets'
 	gem 'will_paginate'
 	gem	'youtube_it'
-	gem "nifty-generators"
+	gem 'badfruit'
 end
 
 group :development, :test do
