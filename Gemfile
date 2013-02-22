@@ -18,7 +18,7 @@ group :development do
 	gem 'thin'
 	gem 'quiet_assets'
 	gem 'will_paginate'
-	gem	'youtube'
+	gem	'youtube_it'
 	gem "nifty-generators"
 end
 
