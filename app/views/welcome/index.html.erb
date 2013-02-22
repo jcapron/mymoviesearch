@@ -11,13 +11,19 @@
 	<% if params[:search] %>
 		<h3 class="muted" style="padding-bottom: 10px">Here are the results for "<%= params[:search] %>":</h3>
 
-		<div class="text-left" style="float: left"><%= image_tag @bf_movie_poster, :size => "256x378" %></div> <!-- posters.original -->
+		<% if @bf_movies[0] %>
+		   
+		<div class="text-left" style="float: left"><%= image_tag @bf_movie_poster, :size => "256x378" %></div> 
 
 		<div class="text-right">
-	    <iframe type="text/html" width="640" height="360" style="float: right" src=<%= @video_res.videos.first.embed_url %> ></iframe>
+	    	<iframe type="text/html" width="640" height="360" style="float: right" src=<%= @video_res.videos.first.embed_url %> ></iframe>
 	    </div>	
 
 	    <div style="clear: both; height: 0; overflow: hidden;"></div>
+		<% else %>
+		   <h4 class="muted">Movie not found :(</h2>
+	   <% end %>
+		
 
 	    <!-- <h4 class="muted">Summary</h5>
 		<div class="text-left">Description</div> -->

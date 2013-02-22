@@ -12,3 +12,5 @@ This is a Rails app for me to play with different APIs.
 http://i.imgur.com/8hZAMyz.png
 
 http://i.imgur.com/j11ZlGO.png
+
+http://i.imgur.com/1wQPJgG.png
