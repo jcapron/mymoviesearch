@@ -6,6 +6,7 @@ This is a Rails app for me to play with different APIs.
 
 - youtube_it (YouTube)
 - badfruit (Rotten Tomatoes)
+- imdb (IMDB)
 
 == Screenshots
 
