@@ -3,7 +3,20 @@ class WelcomeController < ApplicationController
 
 
 def index
-#client = YouTubeIt::Client.new(:dev_key => YouTubeITConfig.dev_key)
+	examples = [
+		"Back to the Future",
+		"Inception",
+		"Scott Pilgrim",
+		"Star Wars 5",
+		"The Artist",
+		"Argo",
+		"Groundhog Day",
+		"Battle Royale",
+		"Superbad",
+		"Pulp Fiction",
+	]
+	@example = examples[rand(examples.length)]
+
 	if params[:search]
 		@video_res = yt_client.videos_by(:query => params[:search] + " trailer", :format => 5)
 			

@@ -1,6 +1,6 @@
 == My Movie Search
 
-This is a Rails app for me to play with different APIs.
+This is a Rails app for me to play with different APIs. I also used Twitter Bootstrap.
 
 == APIs used
 

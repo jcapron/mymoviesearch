@@ -4,7 +4,7 @@
 
 
 	<%= form_tag root_path do %>
-	    <%= text_field_tag :search, params[:search], :placeholder => "Back to the Future" %>
+	    <%= text_field_tag :search, params[:search], :placeholder => @example %>
 	    <%= submit_tag "Search", :class => "btn btn-primary" %>
 	<% end %>
 
@@ -34,7 +34,7 @@
 	   	<% end %>
 		
 
-	    <!-- <h4 class="muted">Summary</h5>
+	    <!-- <h4 class="muted">Summary</h4>
 		<div class="text-left">Description</div> -->
 
 		
