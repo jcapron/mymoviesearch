@@ -21,6 +21,7 @@ group :development do
 	gem 'will_paginate'
 	gem	'youtube_it'
 	gem 'badfruit'
+  gem 'imdb'
 end
 
 group :development, :test do

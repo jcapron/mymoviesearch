@@ -11,6 +11,8 @@ def index
 		if @bf_movies[0] 
 			@bf_movie_poster = @bf_movies[0].posters.original
 		end
+		@plot = Imdb::Search.new(params[:search]).movies.first.plot
+
 	end
 end
 

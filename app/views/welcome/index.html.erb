@@ -12,7 +12,7 @@
 
 		<% if @bf_movies[0] %>
 		   
-		<h3 class="muted" style="padding-bottom: 10px">Here are the results for "<%= params[:search] %>":</h3>
+		<h3 class="muted" style="padding-bottom: 10px">Here are the result for "<%= params[:search] %>":</h3>
 
 		<div class="text-left" style="float: left"><%= image_tag @bf_movie_poster, :size => "256x378" %></div> 
 
@@ -22,6 +22,11 @@
 
 	    <div style="clear: both; height: 0; overflow: hidden;"></div>
 		
+		<% if @plot.length > 0 %>
+			<h3>Plot</h3>
+			<h4 class="muted"><%= @plot %></h4>
+		<% end %>
+		   
 		<% else %>
 		
 		   <h3 class="muted">Movie not found :(</h2>
