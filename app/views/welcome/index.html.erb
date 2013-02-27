@@ -1,5 +1,5 @@
 <div class="hero-unit" style="margin-top: 25px">
-	<h1 style="padding-bottom: 15px">My Movie Search</h1>
+	<h1 style="padding-bottom: 15px">What do you want to watch?</h1>
 
 
 
@@ -11,9 +11,16 @@
 	<% if params[:search] %>
 
 		<% if @bf_movies[0] %>
-		   
+
 		<h3 class="muted" style="padding-bottom: 10px">Here are the result for "<%= params[:search] %>":</h3>
 
+		<h3>Should I watch it?</h3>
+		<% if @bf_scores.average > 50 %>
+			<h4 class="muted">Yes.</h4>
+		<% else %>
+			<h4 class="muted">No.</h4>		   
+		<% end %>
+		<br>
 		<div class="text-left" style="float: left"><%= image_tag @bf_movie_poster, :size => "256x378" %></div> 
 
 		<div class="text-right">
@@ -22,11 +29,12 @@
 
 	    <div style="clear: both; height: 0; overflow: hidden;"></div>
 		
+		<br>
 		<% if @plot.length > 0 %>
 			<h3>Plot</h3>
 			<h4 class="muted"><%= @plot %></h4>
 		<% end %>
-		   
+		         
 		<% else %>
 		
 		   <h3 class="muted">Movie not found :(</h2>

@@ -1,6 +1,7 @@
 == My Movie Search
 
-This is a Rails app for me to play with different APIs. I also used Twitter Bootstrap.
+This is a Rails app for me to play with different APIs, using Twitter Bootstrap.
+You type the name of a movie. The app will give you the poster from Rotten Tomates, the trailer from Youtube, the plot from IMDB and it will say if you should watch it or not based on the average score on Rotten Tomatoes.
 
 == APIs used
 
@@ -10,8 +11,10 @@ This is a Rails app for me to play with different APIs. I also used Twitter Boot
 
 == Screenshots
 
-http://i.imgur.com/8hZAMyz.png
+http://i.imgur.com/9BLt8ez.png
 
-http://i.imgur.com/ATyeZ9x.png
+http://i.imgur.com/vuiaVS6.png
 
-http://i.imgur.com/s52CF3J.png
+http://i.imgur.com/KYIHVct.png
+
+http://i.imgur.com/6BfiVMQ.png

@@ -23,6 +23,7 @@ def index
 		@bf_movies = bf_client.movies.search_by_name(params[:search])
 		if @bf_movies[0] 
 			@bf_movie_poster = @bf_movies[0].posters.original
+			@bf_scores = @bf_movies[0].scores
 		end
 		@plot = Imdb::Search.new(params[:search]).movies.first.plot
 
