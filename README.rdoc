@@ -3,7 +3,7 @@
 This is a Rails app for me to play with different APIs, using Twitter Bootstrap.
 You type the name of a movie. The app will give you the poster from Rotten Tomates, the trailer from Youtube, the plot from IMDB and it will say if you should watch it or not based on the average score on Rotten Tomatoes.
 
-It has been tested with rspec and capybara.
+It has been tested with capybara.
 
 == APIs used
 
