@@ -81,10 +81,9 @@ describe "Searches" do
     end
   end
 
-  describe "Search Battle Royale" do
+  describe "Search Success" do
     it "works!" do
       visit root_path
-      fill_in :search, :with => "Battle Royale"
       click_on "Search"
       page.should have_content("Here is the result for")
     end
